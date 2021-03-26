@@ -6,6 +6,10 @@ from Algorithm import algorithm
 
 app = Flask(__name__)
 
+@app.route("/",methods=["GET"])
+def func():
+    return "ciao"
+
 @app.route("/predict", methods=["POST"])
 def predict():
     #get audio file and save it
