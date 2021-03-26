@@ -1,3 +1,0 @@
-#!/Users/olimpia/Desktop/App/AudioAlgorithm/venv/bin/python3
-from numba.pycc import main
-main()
