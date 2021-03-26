@@ -5,4 +5,3 @@ librosa
 scipy
 speechpy
 uwsgi
-soundfile
