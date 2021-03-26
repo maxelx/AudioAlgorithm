@@ -46,7 +46,7 @@ def scale(OldValue, OldMin, OldMax, NewMin, NewMax ):
 def algorithm(audio):
 
     import librosa
-    x, sr1 = librosa.load('AudioFile/IntradaA.wav')
+    x, sr1 = librosa.load('AudioFIle/IntradaB.wav')
 
     y, sr2 = librosa.load(audio)
 
