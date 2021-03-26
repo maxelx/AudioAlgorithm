@@ -36,11 +36,11 @@ def percentageAudio(a):
 
 
     #Print audio length and sample rate
-    print(x.shape)
-    print(sr1)
+    #print(x.shape)
+    #print(sr1)
 
-    print(y.shape)
-    print(sr2)
+    #print(y.shape)
+    #print(sr2)
 
 
     #sliding Windows definition function

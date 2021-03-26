@@ -32,6 +32,7 @@ def predict():
     #send back the prediction in json format
     result = (mfcc + mfcc2)/2
     data = {"Result": result}
+    print("Result", data)
     return jsonify(data)
 
 if __name__ == "__main__" :
