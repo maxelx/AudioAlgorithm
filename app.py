@@ -24,13 +24,13 @@ def predict():
 
     #make a prediction
     mfcc= model
-    mfcc2= model2[0]
+    mfcc2= model2
 
     #remove the audio file stored
     os.remove(file_name)
 
     #send back the prediction in json format
-    result = (model + model2[0])/2
+    result = (mfcc + mfcc2)/2
     data = {"Result": result}
     return jsonify(data)
 

@@ -84,7 +84,7 @@ def percentageAudio(a):
 
 
     #Chroma Feature Comparison
-
+    """
     chroma1 = librosa.feature.chroma_stft(x, sr1)
     chroma2 = librosa.feature.chroma_stft(y, sr2)
 
@@ -99,7 +99,7 @@ def percentageAudio(a):
 
     chromaMeasure = statistics.mean(chromaMean)
     #print(chromaMeasure)
-
+    """
     #scale function
     def scale(OldValue, OldMin, OldMax, NewMin, NewMax ):
         NewValue = (((OldValue - OldMin) * (NewMax - NewMin)) / (OldMax - OldMin)) + NewMin
@@ -107,6 +107,7 @@ def percentageAudio(a):
 
     #final print
     print("MFCC: " + str(mfccMeasure))
-    print("ChromaFeature: " + str(chromaMeasure))
+    #print("ChromaFeature: " + str(chromaMeasure))
 
-    return [scale(mfccMeasure, 500, 3000, 100, 0), scale(chromaMeasure, 5, 42, 100, 0) ]
+    #return [scale(mfccMeasure, 500, 3000, 100, 0), scale(chromaMeasure, 5, 42, 100, 0) ]
+    return scale(mfccMeasure, 500, 3000, 100, 0)
