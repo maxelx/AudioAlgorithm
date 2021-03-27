@@ -110,5 +110,5 @@ def percentageAudio(a):
     #print("ChromaFeature: " + str(chromaMeasure))
 
     #return [scale(mfccMeasure, 500, 3000, 100, 0), scale(chromaMeasure, 5, 42, 100, 0) ]
-    print("Algo1", mfccMeasure)
+    #print("Algo1", mfccMeasure)
     return scale(mfccMeasure*10, 500, 3000, 100, 0)

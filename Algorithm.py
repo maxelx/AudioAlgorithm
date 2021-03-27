@@ -52,6 +52,6 @@ def algorithm(audio):
     valor = gmm_js(gm, gm2)
     valor = math.log(valor)
     
-    print("Algo 2 GMM", scale(valor, 5.82, 16.56 , 100, 0 ))
+    #print("Algo 2 GMM", scale(valor, 5.82, 16.56 , 100, 0 ))
 
     return scale(valor, 5.82, 16.56 , 100, 0 )
