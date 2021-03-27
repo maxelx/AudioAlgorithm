@@ -1,7 +1,7 @@
 import requests
 URL = "http://127.0.0.1:5000/predict"
 #URL = "https://score-rest.herokuapp.com/predict"
-TEST_AUDIO_FILE = "AudioFIle/voce.wav"
+TEST_AUDIO_FILE = "AudioFIle/IntradaA.wav"
 
 if __name__ == "__main__":
     audio_file = open(TEST_AUDIO_FILE, "rb")

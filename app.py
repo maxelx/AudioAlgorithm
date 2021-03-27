@@ -19,12 +19,8 @@ def predict():
 
     #invoke model
     #model = percentageAudio(file_name)
-    model = algorithm(file_name)
-    model2 = percentageAudio(file_name)
-
-    #make a prediction
-    mfcc= model
-    mfcc2= model2
+    mfcc = algorithm(file_name)
+    mfcc2 = percentageAudio(file_name)
 
     #remove the audio file stored
     os.remove(file_name)
@@ -32,6 +28,7 @@ def predict():
     #send back the prediction in json format
     result = (mfcc + mfcc2)/2
     data = {"Result": result}
+    
     print("Result", data)
     return jsonify(data)
 

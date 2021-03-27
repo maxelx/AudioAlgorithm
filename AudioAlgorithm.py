@@ -74,8 +74,8 @@ def percentageAudio(a):
     mfccMean = []
 
     for i in range(0, len(mfcc1)) :
-        mfcc1a = slidingWindows(mfcc1[i], 10)
-        mfcc2a = slidingWindows(mfcc2[i], 10)
+        mfcc1a = slidingWindows(mfcc1[i], 100)
+        mfcc2a = slidingWindows(mfcc2[i], 100)
 
         mfccMean.append(dtw(mfcc1a,mfcc2a, 650)[len(mfcc1a)][len(mfcc2a)])
 
@@ -106,8 +106,9 @@ def percentageAudio(a):
         return NewValue
 
     #final print
-    print("MFCC: " + str(mfccMeasure))
+    #print("MFCC: " + str(mfccMeasure))
     #print("ChromaFeature: " + str(chromaMeasure))
 
     #return [scale(mfccMeasure, 500, 3000, 100, 0), scale(chromaMeasure, 5, 42, 100, 0) ]
-    return scale(mfccMeasure, 500, 3000, 100, 0)
+    print("Algo1", mfccMeasure)
+    return scale(mfccMeasure*10, 500, 3000, 100, 0)

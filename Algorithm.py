@@ -51,6 +51,7 @@ def algorithm(audio):
     #print the KL-divergence between the 2 distributions using Monte-Carlo method
     valor = gmm_js(gm, gm2)
     valor = math.log(valor)
-    print("Result algo", scale(valor, 5.82, 16.56 , 100, 0 ))
+    
+    print("Algo 2 GMM", scale(valor, 5.82, 16.56 , 100, 0 ))
 
     return scale(valor, 5.82, 16.56 , 100, 0 )
